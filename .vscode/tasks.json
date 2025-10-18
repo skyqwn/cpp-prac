@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Only (for LLDB)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "clang -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\""
+      ],
+      "group": "build",
+      "presentation": {
+        "clear": true,
+        "reveal": "always"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Build & Run C",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "clang -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\""
+      ],
+      "group": "build",
+      "presentation": {
+        "clear": true,
+        "reveal": "always"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Build & Run C++",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "clang++ -std=c++17 -stdlib=libc++ -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\""
+      ],
+      "group": "build",
+      "presentation": {
+        "clear": true,
+        "reveal": "always"
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
