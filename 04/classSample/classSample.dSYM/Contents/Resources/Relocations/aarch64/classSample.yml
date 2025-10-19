@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/sup_kimba/Documents/cpp-prac/04/classSample/classSample'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003E98, symSize: 0x94 }
+  - { offsetInCU: 0x7C7, offset: 0x7C7, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003E98, symSize: 0x94 }
+  - { offsetInCU: 0x836, offset: 0x836, size: 0x8, addend: 0x0, symName: __ZN8UserData5printEv, symObjAddr: 0x94, symBinAddr: 0x100003F2C, symSize: 0x44 }
+...
