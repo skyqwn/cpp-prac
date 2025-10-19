@@ -1,0 +1,16 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/sup_kimba/Documents/cpp-prac/03/nestedNamespace/nestedNamespace'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D28, symSize: 0x98 }
+  - { offsetInCU: 0x44, offset: 0x44, size: 0x8, addend: 0x0, symName: __ZN4Test5nDataE, symObjAddr: 0x214, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x62, offset: 0x62, size: 0x8, addend: 0x0, symName: __ZN4Test3Dev5nDataE, symObjAddr: 0x218, symBinAddr: 0x100008004, symSize: 0x0 }
+  - { offsetInCU: 0x80, offset: 0x80, size: 0x8, addend: 0x0, symName: __ZN4Test3Dev3Win5nDataE, symObjAddr: 0x21C, symBinAddr: 0x100008008, symSize: 0x0 }
+  - { offsetInCU: 0xAD, offset: 0xAD, size: 0x8, addend: 0x0, symName: __ZN5Test26WinDev5nDataE, symObjAddr: 0x220, symBinAddr: 0x10000800C, symSize: 0x0 }
+  - { offsetInCU: 0x4704, offset: 0x4704, size: 0x8, addend: 0x0, symName: __ZNSt3__14endlB8ue170006IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_, symObjAddr: 0xC4, symBinAddr: 0x100003DEC, symSize: 0x58 }
+  - { offsetInCU: 0x4744, offset: 0x4744, size: 0x8, addend: 0x0, symName: __ZNSt3__19use_facetB8ue170006INS_5ctypeIcEEEERKT_RKNS_6localeE, symObjAddr: 0x1A0, symBinAddr: 0x100003EC8, symSize: 0x2C }
+  - { offsetInCU: 0x71F8, offset: 0x71F8, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D28, symSize: 0x98 }
+  - { offsetInCU: 0x72BE, offset: 0x72BE, size: 0x8, addend: 0x0, symName: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB8ue170006EPFRS3_S4_E, symObjAddr: 0x98, symBinAddr: 0x100003DC0, symSize: 0x2C }
+  - { offsetInCU: 0x72F0, offset: 0x72F0, size: 0x8, addend: 0x0, symName: __ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ue170006Ec, symObjAddr: 0x11C, symBinAddr: 0x100003E44, symSize: 0x84 }
+  - { offsetInCU: 0x735C, offset: 0x735C, size: 0x8, addend: 0x0, symName: __ZNKSt3__15ctypeIcE5widenB8ue170006Ec, symObjAddr: 0x1CC, symBinAddr: 0x100003EF4, symSize: 0x38 }
+...
