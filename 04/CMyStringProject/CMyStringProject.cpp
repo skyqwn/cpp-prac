@@ -6,8 +6,8 @@ int main() {
     CMyString hello;
     hello.setData("Hello");
     cout << hello.getData() << endl;
+    cout << "length: " << hello.getLength() << endl;
 
-    hello.setData("World");
-    cout << hello.getData() << endl;
+    
     return 0;
 }

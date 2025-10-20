@@ -1,23 +1,25 @@
 #include <iostream>
 #include "CMyString.h"
+
 using namespace std;
 
 CMyString::CMyString() {
-    cout << "CMyString()" << endl;
+	cout << "CMyString()" << endl;
 }
 
 CMyString::~CMyString() {
-    cout << "~CMyString()" << endl;
-    delete [] m_pszData;
+	cout << "~CMyString()" << endl;
+	delete [] m_pszData;
 }
 
-void CMyString::setData(const char *pParam) {
+void CMyString::setData(const char* pParam)
+{
+	if(m_pszData != nullptr)
+		delete[] m_pszData;
 
-    if(m_pszData != nullptr)
-        delete[] m_pszData;
+	size_t length = strlen(pParam);
+	m_pszData = new char[length + 1];
 
-    size_t length = strlen(pParam);
-    m_pszData = new char[length + 1];
-
-    strcpy(m_pszData, pParam);
+	strcpy(m_pszData, pParam);
+	this->length = length;
 }

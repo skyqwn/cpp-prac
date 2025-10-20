@@ -1,19 +1,26 @@
 #pragma once
-#include <iostream>
-using namespace std;
 
 class CMyString
 {
 public:
-    CMyString();
-    ~CMyString();
+	CMyString();
+	~CMyString();
 
-    char* getData() {
-        return m_pszData;
-    }
+	const char* getData() const {
+		return m_pszData;
+	}
 
-    void setData(const char* pParam);
+	size_t getLength() const {
+		return this->length;
+	}
+
+	void setData(const char* pParam);
 
 private:
-    char* m_pszData = nullptr;
+	char* m_pszData = nullptr;
+	size_t length = 0;
 };
+
+
+
+
