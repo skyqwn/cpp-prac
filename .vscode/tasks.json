@@ -32,17 +32,24 @@
       "problemMatcher": ["$gcc"]
     },
     {
-      "label": "Build & Run C++",
+      "label": "Build & Run C++ Project",
       "type": "shell",
       "command": "bash",
       "args": [
-        "-lc",
-        "clang++ -std=c++17 -stdlib=libc++ -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\""
+        "-c",
+        "clang++ -std=c++17 -stdlib=libc++ -g *.cpp -o MyProgram && ./MyProgram"
       ],
-      "group": "build",
+      "options": {
+        "cwd": "${fileDirname}" // 현재 열려있는 파일 폴더를 작업 디렉터리로 지정
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "presentation": {
-        "clear": true,
-        "reveal": "always"
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared"
       },
       "problemMatcher": ["$gcc"]
     }
