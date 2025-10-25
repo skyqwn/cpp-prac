@@ -1,0 +1,19 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     MyProgram
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003A94, symSize: 0x108 }
+  - { offsetInCU: 0x467B, offset: 0x467B, size: 0x8, addend: 0x0, symName: __ZNSt3__14endlB8ue170006IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_, symObjAddr: 0x1E8, symBinAddr: 0x100003C7C, symSize: 0x58 }
+  - { offsetInCU: 0x46BB, offset: 0x46BB, size: 0x8, addend: 0x0, symName: __ZNSt3__19use_facetB8ue170006INS_5ctypeIcEEEERKT_RKNS_6localeE, symObjAddr: 0x3E0, symBinAddr: 0x100003E74, symSize: 0x2C }
+  - { offsetInCU: 0x7176, offset: 0x7176, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003A94, symSize: 0x108 }
+  - { offsetInCU: 0x7225, offset: 0x7225, size: 0x8, addend: 0x0, symName: __ZN6MyDataC1Ei, symObjAddr: 0x108, symBinAddr: 0x100003B9C, symSize: 0x34 }
+  - { offsetInCU: 0x725B, offset: 0x725B, size: 0x8, addend: 0x0, symName: __ZN6MyDataC1ERKS_, symObjAddr: 0x13C, symBinAddr: 0x100003BD0, symSize: 0x34 }
+  - { offsetInCU: 0x7291, offset: 0x7291, size: 0x8, addend: 0x0, symName: __ZNK6MyData7getDataEv, symObjAddr: 0x170, symBinAddr: 0x100003C04, symSize: 0x4C }
+  - { offsetInCU: 0x7362, offset: 0x7362, size: 0x8, addend: 0x0, symName: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB8ue170006EPFRS3_S4_E, symObjAddr: 0x1BC, symBinAddr: 0x100003C50, symSize: 0x2C }
+  - { offsetInCU: 0x7394, offset: 0x7394, size: 0x8, addend: 0x0, symName: __ZN6MyDataD1Ev, symObjAddr: 0x240, symBinAddr: 0x100003CD4, symSize: 0x2C }
+  - { offsetInCU: 0x73BC, offset: 0x73BC, size: 0x8, addend: 0x0, symName: __ZN6MyDataC2Ei, symObjAddr: 0x26C, symBinAddr: 0x100003D00, symSize: 0x4C }
+  - { offsetInCU: 0x73F2, offset: 0x73F2, size: 0x8, addend: 0x0, symName: __ZN6MyDataC2ERKS_, symObjAddr: 0x2B8, symBinAddr: 0x100003D4C, symSize: 0x54 }
+  - { offsetInCU: 0x7428, offset: 0x7428, size: 0x8, addend: 0x0, symName: __ZN6MyDataD2Ev, symObjAddr: 0x30C, symBinAddr: 0x100003DA0, symSize: 0x50 }
+  - { offsetInCU: 0x7450, offset: 0x7450, size: 0x8, addend: 0x0, symName: __ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB8ue170006Ec, symObjAddr: 0x35C, symBinAddr: 0x100003DF0, symSize: 0x84 }
+  - { offsetInCU: 0x74BC, offset: 0x74BC, size: 0x8, addend: 0x0, symName: __ZNKSt3__15ctypeIcE5widenB8ue170006Ec, symObjAddr: 0x40C, symBinAddr: 0x100003EA0, symSize: 0x38 }
+...

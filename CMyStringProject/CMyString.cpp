@@ -7,6 +7,22 @@ CMyString::CMyString() {
 	cout << "CMyString()" << endl;
 }
 
+CMyString::CMyString(const char* param) {
+	cout << "CMyString(const char*)" << endl;
+	this->setData(param);
+}
+
+CMyString::CMyString(const CMyString& rhs){
+	cout << "CMyString(const CMyString&)" << endl;
+	setData(rhs.m_pszData);
+	// this->setData(rhs.getData());
+}
+
+CMyString::CMyString(CMyString&& rhs) noexcept {
+	cout << "CMyString(CMyString&&) - move" << endl;
+	this->setData(rhs.getData());
+}
+
 CMyString::~CMyString() {
 	cout << "~CMyString()" << endl;
 	delete [] m_pszData;
