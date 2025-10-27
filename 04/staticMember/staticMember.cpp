@@ -2,8 +2,7 @@
 
 using namespace std;
 
-class Test
-{
+class Test {
 public:
     Test(int data) : nData(data) {
         nCount++;
@@ -21,16 +20,12 @@ public:
         return nCount;
     }
 
-
 private:
     int nData = 0;
     static int nCount;
 };
 
-int Test::nCount = 0;
-
-int main()
-{
+int main() {
     Test a(5), b(10);
 
     cout << a.getCount() << endl;
